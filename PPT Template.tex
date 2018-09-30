@@ -92,9 +92,10 @@ APPLICATION IN INDUSTRIAL PROCESS}
 
 
 
-\begin{frame}\frametitle{}
-\Huge
-\begin{center}PROBLEM STATEMENT\end{center}
+\begin{frame}\frametitle{Problem statement}
+\begin{figure}[h]
+\centerline{\includegraphics[width=3.7in]{health}}
+\end{figure}
 \end{frame}
 \begin{frame}\frametitle{Implementation}
 \item Major implementations of our objective 
@@ -123,46 +124,40 @@ APPLICATION IN INDUSTRIAL PROCESS}
 \end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{ Architecture of basic master device }
-\begin{figure}[h]
-\centerline{\includegraphics[width=3.7in]{master}}
-\caption{Master device architecture  .}
-\end{figure}
+\begin{frame}\frametitle{Architecture of Basic master device}
+\begin{itemize}
+  \begin{figure}[H]
+  \centerline{\includegraphics[width=4.0in]{master.JPG}}
+  \caption{ \textbf{}Master device architecture}
+  \end{figure}
+\end{itemize}
 \end{frame}
 \begin{frame}\frametitle{Architecture of basic slave device }
 \begin{itemize}
 \begin{figure}[h]
-\centerline{\includegraphics[width=3.7in]{master}}
-\caption{Master device architecture  .}
+\centerline{\includegraphics[width=3.7in]{slave}}
+\caption{slave device architecture  .}
 \end{figure}
 \end{itemize}
 \end{frame}
   \begin{frame}\frametitle{Integration of multiple sensors on Arduino.}
- \item smoke  sensor
+ \item Smoke  sensor
 \begin{itemize}
-\item Integration of ultrasonic sensor on Arduino .
-\item Integration of Sound sensor on Arduino.
-\item Integration of Multiple sensor on Arduino.
-\item vibration sensor
-\item explanation
-\item 
-\item
-.
-
+\item Smoke sensor is used to detect a wide range of gases in the surroundings.
+\item Wide range of gases include propane, butane, hydrogen etc.
 \end{itemize}
-\end{frame}
- \begin{frame}\frametitle{Integration of multiple sensors on Arduino.}
- \item humidity sensor 
+ \item Vibration sensor
 \begin{itemize}
-\item Integration of ultrasonic sensor on Arduino .
-\item Integration of Sound sensor on Arduino.
-\item .
-\item temprature sensor 
-\item explanation
-\item 
-\item
+    \item Vibration sensor is used to feel the vibration in the surroundings. 
+\end{itemize}
 .
 
+\end{frame}
+ \begin{frame}
+ \item Humidity and Temperature sensor
+\begin{itemize}
+\item Humidity and temperature sensor is used to calculate the relative humidity in the air.
+\item It is also used to calculate the change in the temperature in the surroundings.
 \end{itemize}
 \end{frame}
 
@@ -178,35 +173,42 @@ APPLICATION IN INDUSTRIAL PROCESS}
 \begin{frame}\frametitle{Slave  device}
 \begin{itemize}
   \begin{figure}[H]
-  \centerline{\includegraphics[width=4.0in]{slave1.JPG}}
+  \centerline{\includegraphics[width=4.0in]{slave22}}
   \caption{ \textbf{}Slave device to transfer data to the cloud}
   \end{figure}
 \end{itemize}
 \end{frame}
-\begin{frame}\frametitle{Communication between master and salve device.}
- \item humidity sensor 
+\begin{frame}\frametitle{Communication between master and slave device.}
 \begin{itemize}
-\item Integration of ultrasonic sensor on Arduino .
-\item Integration of Sound sensor on Arduino.
-\item .
-\item temprature sensor 
-\item explanation
-\item 
-\item
-.
-
+\item Bluetooth module is used to communicate between master and slave device.
+\item A master Bluetooth module is connected to master device to send data to the slave device. 
+\item A slave Bluetooth module is connected to slave device to receive data from the master device.
+\item Bluetooth modules used serial port protocol for communication between two device.
+\end{itemize}
+\end{frame}
+\begin{frame}\frametitle{Saving data into cloud.}
+\begin{itemize}
+\item ESP2866 WIFI module is used to send sensor data into cloud. 
+\item We had used Think-Speak cloud to save our sensor data into cloud.
 \end{itemize}
 \end{frame}
 \begin{frame}\frametitle{Testing.}
 \begin{itemize}
-\item excel sheets.
-\item gkhkhh 
+\item We have tested few sensors on different environments.
+\item We also used different set of sensors for different. requirements.  
 \end{itemize}
 \end{frame}
-
 \begin{frame}
 \begin{itemize}\frametitle{Results}
-\item Data representation for ultrasonic sensor and sound sensor.
+\item We have integrated five sensors on a single micro controller for effective reliability. 
+\item We have established a wireless communication between two devices.
+\item We have used different configuration of sensors for different environments.
+\item The data collected is stored in a cloud storage for documentation.
+\end{itemize} 
+\end{frame}
+\begin{frame}
+\begin{itemize}
+\item Data representation for ultrasonic sensor and sound sensor in cloud.
   \begin{figure}[H]
   \centerline{\includegraphics[width=4.0in]{two.JPG}}
   \caption{ \textbf{}Data representation in cloud for two sensors}
@@ -215,8 +217,8 @@ APPLICATION IN INDUSTRIAL PROCESS}
 \end{frame}
 \begin{frame}
 \begin{itemize}
-\item Curve fitting of the tampered video is shown below.
-  \begin{figure}[H]
+\item Data representation for multiple sensors in cloud.
+  \begin{figure}
   \centerline{\includegraphics[width=4.0in]{multiplesensor.JPG}}
   \caption{ \textbf{}Data representation in cloud for multiple sensors}
   \end{figure}
@@ -236,8 +238,8 @@ APPLICATION IN INDUSTRIAL PROCESS}
 \begin{frame}\frametitle{Future Work}
 Future work may comprise
 \begin{itemize}
-\item  As a future work, we are going to further enhance the performance of the proposed algorithm for videos from mobile cameras and with severe motions.
-\item Improving the intra frame forgery and green screen forgery as well.
+\item As a future work we will test our project in the industries.
+\item We will test and integrate different kind of sensor to adjust different environment requirements.
 \end{itemize}
 \end{frame}
 \begin{frame}\frametitle{References}
