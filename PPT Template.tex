@@ -60,23 +60,18 @@ APPLICATION IN INDUSTRIAL PROCESS}
 	\begin{frame}\frametitle{Contents}
 	\begin{itemize}
 		\item	Introduction
-		\item   Literature Review
-		\item   Problem Statement 
+		\item   literature review 
+		\item   Objective 
 		\item	Implementation  
 		\item   Testing
 		\item	Results
 		\item   Conclusion and Future works
+		\item   References
 	\end{itemize}
 \end{frame}
-\begin{frame}\frametitle{}
-\Huge
-\begin{center}INTRODUCTION \end{center}
-\end{frame}
-
-\begin{frame}\frametitle{Internet Of Things and its Importance }
+\begin{frame}\frametitle{Introduction}
 \begin{itemize}
-
-\item	Internet Of Things
+\item Internet Of Things
 \begin{itemize}
 	\item Is a network of physical objects, embedded with sensors, electronics and soft wares .	 
 	\item Which enables network connectivity and helps in collecting and exchanging the data.	  
@@ -90,40 +85,51 @@ APPLICATION IN INDUSTRIAL PROCESS}
 \end{frame}
 
 
+\begin{frame}\frametitle{Objective}
+\begin{itemize}
 
+\item To design a multi sensor based device for data acquisition.
+\item Connect different multi sensor based data acquisition board through an energy efficient communication scheme.
+\item To design data acquisitions scheme to collect real life data from different deployed multi sensor based data acquisition board.
+\item To design a scheme to analyze the collected data for identification of fault of the industrial machine Transmission of data to cloud platform.
 
-\begin{frame}\frametitle{Problem statement}
-\begin{figure}[h]
-\centerline{\includegraphics[width=3.7in]{health}}
-\end{figure}
+\end{itemize}
+\end{frame}
+\begin{frame}[shrink=20]\frametitle{literature review}
+\begin{table}[h]
+    \begin{tabular}{|c|p{3cm}|p{3cm}|p{3cm}|}
+    \hline
+    \textbf{S.No} & \textbf{Paper Title} & \textbf{Authors} & \textbf{Details and Limitations}\\
+    \hline
+    1 &Applications for ultrasonic sensors in process industries &  Puttmer, Alf & Recent applications of ultrasonic sensor in the industries .\\
+    \hline
+    2 &Raspberry Pi as Internet of things hardware: performances and constraint &  Maksimović, Mirjana, et al & Uses of raspberry pi as IoT application.\\
+    \hline
+    3 & A novel ultrasonic sensing system for autonomation  &  Bank, Dirk & which all part of industries needs automation to decrease the labour costs.\\
+    \hline
+ 
+  \end{tabular}
+  %\caption{This table shows some data}
+  %\label{tab:myfirsttable}
+\end{table}
 \end{frame}
 \begin{frame}\frametitle{Implementation}
 \item Major implementations of our objective 
 \begin{itemize}
 
-\item Integration of ultrasonic sensor on Arduino .
-\item Integration of Sound sensor on Arduino.
-\item Integration of Multiple sensor on Arduino.
-\item Transmission of data  using two  Bluetooth modules .
+\item Integration of ultrasonic sensor and sound sensor on a micro controller.
+\item Integration of Multiple sensors on a micro controller.
+\item Communication of data between two devices.
 \item Transmission of data to cloud platform.
 
 \end{itemize}
 \end{frame}
-\begin{frame}\frametitle{Integration of ultrasonic senor on Arduino.}
+\begin{frame}\frametitle{Integration of ultrasonic senor and sound sensor on a micro controller}
 \begin{itemize}
 \item we have used ultrasonic sensor to calculate the distance of the object placed in front of the sensor.
-\item .
+\item The sound sensor is used to calculate the  sound variations in the  surroundings
 \end{itemize}
 \end{frame}
-
-\begin{frame}\frametitle{Integration of sound sensor on Arduino}
-\begin{itemize}
-\item The sound sensor is used to calculate the  sound variations in the  surroundings  .  
-\item   .  
-\item   .
-\end{itemize}
-\end{frame}
-
 \begin{frame}\frametitle{Architecture of Basic master device}
 \begin{itemize}
   \begin{figure}[H]
@@ -140,7 +146,7 @@ APPLICATION IN INDUSTRIAL PROCESS}
 \end{figure}
 \end{itemize}
 \end{frame}
-  \begin{frame}\frametitle{Integration of multiple sensors on Arduino.}
+  \begin{frame}\frametitle{Integration of multiple sensors on a micro controller}
  \item Smoke  sensor
 \begin{itemize}
 \item Smoke sensor is used to detect a wide range of gases in the surroundings.
@@ -178,7 +184,7 @@ APPLICATION IN INDUSTRIAL PROCESS}
   \end{figure}
 \end{itemize}
 \end{frame}
-\begin{frame}\frametitle{Communication between master and slave device.}
+\begin{frame}\frametitle{Communication between master and slave device}
 \begin{itemize}
 \item Bluetooth module is used to communicate between master and slave device.
 \item A master Bluetooth module is connected to master device to send data to the slave device. 
@@ -186,13 +192,13 @@ APPLICATION IN INDUSTRIAL PROCESS}
 \item Bluetooth modules used serial port protocol for communication between two device.
 \end{itemize}
 \end{frame}
-\begin{frame}\frametitle{Saving data into cloud.}
+\begin{frame}\frametitle{Transmission of data to cloud platform}
 \begin{itemize}
 \item ESP2866 WIFI module is used to send sensor data into cloud. 
 \item We had used Think-Speak cloud to save our sensor data into cloud.
 \end{itemize}
 \end{frame}
-\begin{frame}\frametitle{Testing.}
+\begin{frame}\frametitle{Testing}
 \begin{itemize}
 \item We have tested few sensors on different environments.
 \item We also used different set of sensors for different. requirements.  
@@ -226,20 +232,21 @@ APPLICATION IN INDUSTRIAL PROCESS}
 \end{frame}
 
 \begin{frame}\frametitle{Conclusion}
-\item Numerous tampering detection techniques have been proposed before are intending to detect the tamper in a video.
+\item 
 \begin{itemize}
-    \item Using various techniques such as watermarking, signature detection.
-    \item That techniques  can  detect  only  MPEG2  encoded  videos.
+    
 \end{itemize}
 \begin{itemize}
-\item This algorithm detects  inter tampered frames in any kind of videos such as MPEG2 and MPEG4 encoded videos.
+\item Our main prospect of the project dealing with making an low cost IoT application which can become handy for the many industrial process and in the maintenance prospects .
+\item 
+Important factor which our objective results is in decreasing the employee engagement and automation of the security system which help companies to shape up economically.
 \end{itemize}
 \end{frame}
 \begin{frame}\frametitle{Future Work}
 Future work may comprise
 \begin{itemize}
 \item As a future work we will test our project in the industries.
-\item We will test and integrate different kind of sensor to adjust different environment requirements.
+\item The data stored in the cloud is sorted to set a threshold value for better health mointoring of industrial machines.
 \end{itemize}
 \end{frame}
 \begin{frame}\frametitle{References}
@@ -255,9 +262,9 @@ Future work may comprise
  Authors & Title & Details\\\midrule
 
 \multicolumn{3}{c}{}\\
- Arab F, Abdullah SM, Hashim SZM, Manaf AA, Zamani M  & A robust video watermarking technique for the tamper detection of surveillance systems & It is used for different purposes including authentication and tamper detection.\\\midrule
+  Ferdoush, Sheikh, and Xinrong Li  & Wireless sensor network system design using Raspberry Pi and Arduino for environmental monitoring application & Raspberry Pi can be used for many application which supports WSN and IoT application  .\\\midrule
 \multicolumn{3}{c}{}\\
-Tanfeng Sun, Wan Wang & Exposing video forgeries by detecting MPEG double compression & An improved video tampering detection model based on MPEG double compression is proposed.\\\midrule
+Lynnworth, Lawrence C., and Brian J. Spencer & Ultrasonic sensing system & An improved version for  gathering the data from different  environmental conditions.\\\midrule
 
 
 \bottomrule
